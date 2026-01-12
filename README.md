@@ -47,8 +47,8 @@ stop your Minikube cluster
 
 Installation:
 -------------
-brew install minikube
-
+	brew install minikube
+	brew install kubectl
 Start your cluster
 ------------------
 	minikube start --driver docker
