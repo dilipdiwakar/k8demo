@@ -55,9 +55,21 @@ stop your Minikube cluster
 
 minikube stop
 
+Installation:
+-------------
+brew install minikube
+
+Start your cluster
+------------------
+	minikube start --driver docker
+	minikube status
+	kubectl get node
+	minikube stop
+	minikube delete
+
 
 Running the containers :
-
+------------------------
 
 kubectl apply -f mongo-config.yaml
 kubectl apply -f mongo-secret.yaml
@@ -66,7 +78,7 @@ kubectl apply -f webapp.yaml
 
 
 ⚠️ Known issue - Minikube IP not accessible
-
+-------------------------------------------
 If you can't access the NodePort service webapp with MinikubeIP:NodePort, execute the following command:
 
 minikube service webapp-service
